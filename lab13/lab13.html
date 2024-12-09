@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todolist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .task {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .task span {
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    .task.completed span {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todolist</h1>
+  <div>
+    <input id="taskInput" type="text" placeholder="Введите задачу" />
+    <button id="addTaskButton">Добавить</button>
+  </div>
+  <div id="taskList"></div>
+  <div class="buttons">
+    <button id="showAll">Показать все</button>
+    <button id="showCompleted">Показать выполненные</button>
+    <button id="showUncompleted">Показать невыполненные</button>
+  </div>
+  <script src="lab13.js"></script>
+</body>
+</html>
